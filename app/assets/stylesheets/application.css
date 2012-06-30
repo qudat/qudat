@@ -1,0 +1,126 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+body {background-color:#e1e0e0;color:#534730;font-family:Arial, Helvetica, sans-serif;font-size:12px;margin:0;padding:0;text-align:center;}
+
+a {text-decoration:none; color:#4a6c64;}
+a:hover {text-decoration:underline; color:#534730;}
+
+img {border:0;}
+
+h1,h2,h3,h4,h5,h6 {font-family:"Century Gothic";font-size:15pt;font-weight:normal;margin:0;text-transform:lowercase;}
+
+hr {border:0;border-top: 1px solid #4a6c64;}
+
+p {line-height:16pt;}
+
+#feeder_table { width: 450px; }
+
+div#pic
+{
+box-shadow: 4px 4px 5px #888888;
+-webkit-box-shadow: 4px 4px 5px #888888; /* Safari */
+width: 100px;
+height: 75px;
+border:2px solid;
+float: left;
+margin: 0 0 15px 15px;
+}
+
+div#mypic
+{
+box-shadow: 4px 4px 5px #888888;
+-webkit-box-shadow: 4px 4px 5px #888888; /* Safari */
+width:240px;
+}
+
+/*LAYOUT TAGS*/
+#main {width:960px;margin:0 auto;}
+#header {background:url('header.jpg') no-repeat;height:180px;padding:22px 0 0 25px;width:935px;text-align:left;}
+#nav {background:url('navbg_hover.jpg') repeat-x #716753;height:30px;width:960px;}
+#content {background:url('contentbg.jpg') repeat-x #fff; background-color: #fff; height:auto; padding:40px 30px 40px 30px; text-align:left; width:900px;}
+
+div.error {color:red;}
+
+#hello {
+float:left;
+padding:0 0 0 0;
+width:260px;
+}
+
+#feed {float:right; padding:0 0 0 30px; width:590px;}
+#footer {background:url('footerbg.jpg') repeat #716753;width:960px;height:100px;}
+
+/*NAV*/
+#nav ul {list-style:none;margin:0;padding:0;}
+#nav li {float:left;}
+#nav a {border-right:1px solid #332c1f;color:#dcf1f3;display:block;float:left;font-family:arial;font-size:12px;padding:7px 20px 6px;text-decoration:none;}
+#nav a:hover {background:url('navbg.jpg') repeat-x #51442e;}
+#nav .end {border-right:0;}
+
+.overlay{
+    background:transparent url(overlay.png) repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+
+.box{
+    position:fixed;
+    top:-200px;
+    left:30%;
+    right:30%;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:20px;
+    border:2px solid #ccc;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:101;
+}
+
+a.boxclose{
+    float:right;
+    width:26px;
+    height:26px;
+    background:transparent url(cancel.png) repeat top left;
+    margin-top:-30px;
+    margin-right:-30px;
+    cursor:pointer;
+}
+
+.box h1{
+    border-bottom: 1px dashed #7F7F7F;
+    margin:-20px -20px 0px -20px;
+    padding:10px;
+    background-color:#FFEFEF;
+    color:#EF7777;
+    -moz-border-radius:20px 20px 0px 0px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -khtml-border-top-left-radius: 20px;
+    -khtml-border-top-right-radius: 20px;
+}
+
+/*MISC CLASSES*/
+.clear {clear:both;}
+.date {font-size:8pt;font-weight:normal;text-transform:lowercase;}
+.title{font-size:12pt;font-weight:strong;}
+.hidden { display: none; }
+.unhidden { display: block; }

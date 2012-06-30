@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  project_name: MyString
+  info: MyText
+  pdf_dir: MyString
+  photo_dir: MyString
+  zip_dir: MyString
+  visible: MyString
+
+two:
+  project_name: MyString
+  info: MyText
+  pdf_dir: MyString
+  photo_dir: MyString
+  zip_dir: MyString
+  visible: MyString

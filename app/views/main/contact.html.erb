@@ -1,0 +1,21 @@
+<div id="hello">
+	<table border="0" cellpadding="2" cellspacing="2" width="100%">
+		<tr><td><strong>email</strong></td><td width="70%"><a href="mailto:erb.qudat@gmail.com">erb.qudat at gmail</a></td></tr>
+		<tr bgcolor="#C1CDCD"><td><strong>FB</strong></td><td> <a href="http://facebook.com/glial">Glial</a></td></tr>
+		<tr><td><strong>Phone</strong></td><td>YA RIGHT!</td></tr>
+	</table>
+</div>
+<div id="feed">
+<p>This form allows you to quickly submit a comment, question, or suggestion you have might about my website or even towards myself.  You can also select to post this comment--as well as a link to my site--on your facebook feed!  Also, my email addresses are located on the left side of this page, feel free to contact me.  Enjoy!</p>
+
+<form method="post" id="contact">
+	<input type="text" name="name" onclick="removeText(name)" onblur="nameVal()" size="44" value="name">
+	<div class="error" id="nameError"></div>
+	<input type="text" name="email" onclick="removeText(name)" onblur="emailVal()" size="44" value="email">
+	<div class="error" id="emailError"></div>
+	<textarea rows="10" name="message" onclick="removeMessageText()" onblur="messageVal()" cols="35">message</textarea><br />
+	<div class="error" id="messageError"></div>
+	<input type="button" value="Send!" onclick="checkSubmit()">
+	<div class="error" id="submitError"></div>
+</form>
+</div>

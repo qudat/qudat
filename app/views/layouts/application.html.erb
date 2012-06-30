@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Neurosnap -- Curriculum Vitae of Eric Bower</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
+<div id="main">
+<div id="header"><a href="/"><img src="<%= asset_path('logo.png') %>" alt="quantum data" style="border:0;" /></a></div>
+<div id="nav">
+<ul>
+<li><a href="/">bio</a></li>
+<li><a href="/projects">projects</a></li>
+<li><a href="/main/resume">resume</a></li>
+<li><a href="/main/contact">contact</a></li>
+<li><a href="http://www.nysus.net">[Nysus]</a></li>
+</ul>
+</div>
+<div id="content">
+
+<%= yield %>
+
+<div class="clear"></div>
+</div>
+
+<div id="footer"></div>
+</div>
+
+</body>
+</html>
